@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>View</title>
+</head>
+<body>
+<center><h3>View page</h3> 
+{%for g in gifts%}
+<b>Name: {{ g.name}}</b>
+<br>
+<b>Type: {{ g.type }}</b><br>
+<b>Price:{{ g.price }}</b><br>
+<b>Quantity: {{ g.quantity }}</b><br>
+
+{%endfor%}</center>
+</body>
+</html>

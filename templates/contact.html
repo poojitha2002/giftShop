@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{ title }}</title>
+	
+    <link  rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+<section id="contact" class="contact">
+   <div class="container">
+       <h1 class="section-head">Contact <span>Me</span></h1>
+       <div class="card-wrapper">
+           <div class="card">
+               <img src="./images/phone.png" width=100px height=100px alt="">
+               <h2>Call Me On</h2>
+               <h6>+91 7780682118</h6>
+           </div>
+           <div class="card">
+               <img src="./images/mail.png" width=100px height=100px alt="">
+               <h2>Email Me At</h2>
+               <h6>ravuri.poojitha123@gmail.com</h6>
+           </div>
+           <div class="card">
+               <img src="./images/visit.jpg" width=80px height=100px alt="">
+               <h2>Visit Me At</h2>
+               <h6>Maruti Nagar, Vijayawada</h6>
+           </div> 
+       </div>
+
+       <form action="https://formspree.io/f/xeqpvbey" method="POST">
+       <div class="input-wrap">
+           <input type="text" placeholder="Your Name *" name="name" required>
+           <input type="email" placeholder="Your Email *" name="email" required>
+       </div>
+       <div class="input-wrap-2">
+           <input type="text" placeholder="Your Subject..." name="subject" required>
+           <textarea name="" id="" cols="30" rows="10" placeholder="Your Message.." name="message"></textarea>
+       </div>
+          <div  class="btn-wrapper">
+              <button class="btn btn-primary">Send Message</button>
+          </div>
+
+      
+      </form>
+   </div>
+</section>
+
+ 
+</body>
+</html>
